@@ -1,0 +1,974 @@
+/* Reset */
+
+body{
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 1em;
+    background-color: rgb(240, 238, 238);
+
+    /* background-repeat: no-repeat;
+    background-size: 500px; */
+
+    margin: 0;
+    padding: 0;
+
+    overflow-x: hidden;
+    }
+    /* esto practicaste a la mitad ayer. */
+
+
+
+
+    /* esto es lo que usaste para armar el navegador()lo cambiaste por el de sass */
+
+    /* .nav-input:checked + .ultimo-intento{
+        background: tomato;
+    }
+        .menu{background-color: #e9183b;
+        height: 75px;
+        width: 100vw;
+        align-items: center;
+        border-bottom: 1px solid #fff;
+        box-shadow: 5px 0px 10px rgba(0, 0, 0, .6);
+
+        display: flex;
+        justify-content: space-between;
+        }
+
+        .logo-libreria{
+            color: white;
+            font-size: 35px;
+            padding: 0 80px;
+            font-weight: bold;
+        }
+
+        .menu-items{
+            display: flex;
+            list-style: none;
+            margin-right: 30px;
+        }
+
+        .menu-items li{
+            border-radius: 3px;
+            margin: 0 5px;
+        }
+
+        .menu-items li a{
+            padding: 7px 13px;
+            text-decoration: none;
+            font-size: 18 px;
+            display: block;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        .menu-items li:hover, li.active{
+            background-color: rgba(0, 0, 0, .3);
+            transition: .4s;
+        }
+
+        .btn-menu{
+            margin-right: 30px;
+            font-size: 25px;
+            color: #fff;
+            cursor: pointer;
+            display:none;
+            justify-content: center;
+            justify-content: space-between;
+            align-items: center;
+        } 
+
+           ul.mostrar{
+            top: 65px;
+        }
+        
+        @media (max-width:952px){
+            .logo-libreria{
+                font-size: 30px;
+                padding-left: 35px;
+            }
+
+            .menu-items{
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width:858px){
+            .menu{
+                height: 65px;
+            }
+
+            .btn-menu{
+                display: inline-flex;
+            }
+
+            .menu-items{
+                position: fixed;
+                width: 100px;
+                height: calc(100% - 65px);
+                background: #414141;
+                top: 100vh;
+                text-align: center;
+                transition: all .4s;
+                flex-direction: column;
+            }
+
+            .menu-items li{
+                margin: 30px 0px 0px 0px;
+                line-height: 30px;
+            }
+
+            .menu-items li:hover{
+                background: none;
+            }
+
+            .menu-items li a{
+                font-size:20px;
+                color: #fff;
+                font-weight: bold;
+            }
+
+            .menu-items li a:hover{
+                color: #e9183b;
+            }
+            .logo{
+                font-size: 25px;
+                padding-left: 35px;
+            }
+        }
+
+        @media screen and (max-width:858px) and (orientation:landscape) {
+            .menu-items li{
+                margin: 5pc 0 0 0;
+            }
+            .menu-items{
+                overflow: scroll;
+                height: calc(100% - 65px);
+            }
+            
+        } */
+
+        .main-navegacion{
+            position: relative;
+            bottom: 0;
+            width: 100vw;
+            text-decoration: none;
+            background-color: rgb(202, 198, 198);
+            padding-top: 2px;
+        }
+
+        .contenedor-navbar-libro-1, .contenedor-navbar-libro-2{
+            padding-top: 5px;
+            border: 2px solid white;
+            border-radius: 5px;
+            box-shadow: 5px 0px 10px rgba(0, 0, 0, .6);
+            margin: 1px;
+
+            text-decoration: none;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            height: 100%;
+            padding-right: 40px;
+        }
+
+        .contenedor-navbar-libro-2{
+            display: none;
+        }
+
+        .contenedor-navbar-libro-1 h3{
+            display: none;   
+        }
+
+        .footer-navegacion h3{
+            color: #0f1f2f;
+        }
+
+        .footer-navegacion li{
+            list-style: none;
+        }
+
+        .footer-navegacion  a{
+            text-decoration: none;
+            color: #000;
+        }
+
+        .footer-navegacion h5{
+            text-align: center;
+        }
+
+        .footer-navegacion h5 span{
+            display: none;
+        }
+
+        @media (min-width: 800px){
+            .footer-navegacion h5 span{
+                display: inline-flex;
+            }
+
+            .contenedor-navbar-libro-1{
+                display: none;
+            }
+
+            .contenedor-navbar-libro-2{
+                display: inline-flex;
+            }
+
+            .contenedor-navbar-libro-2{
+                padding-top: 5px;
+                border: 2px solid white;
+                border-radius: 5px;
+                box-shadow: 5px 0px 10px rgba(0, 0, 0, .6);
+                margin: 1px;
+    
+                text-decoration: none;
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                height: 100%;
+                padding-right: 40px;
+            }
+
+            .contenedor-navbar-libro-2 h3{
+                display: inline-flex;
+                
+                font-size: 1.3rem;
+            }
+
+            .contenedor-navbar-libro-2 h3 span{
+                display: none;
+            }
+        }
+
+        @media (min-width: 1024px){
+            .contenedor-navbar-libro-2 h3 span{
+                display: inline-flex;
+            }
+        }
+
+    /* Esta es la parte donde hago el responsive de los libros top */
+
+    .libro-top-1{
+            display: flex;
+            justify-content: center;
+        }
+        
+        .libro-top-1 img{
+            max-width: 60%;
+            padding: 10px;
+        }
+
+        .reaccion-icon{
+            display: flex;
+            justify-content: center;
+        }
+
+        .estilos-titulos{
+            padding-left: 10px;
+        }
+
+        .estilos-titulos-2{
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .estilos-titulos-s3{
+            opacity: 50%;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: rgba(0, 0, 0, .6);
+        }
+
+        .estilos-titulos-3{
+            color: #e9183b;
+        }
+
+        .estilos-titulos-ed-3{
+            color: rgb(0, 0, 0);
+            font-weight: 400;
+        }
+
+        .fondo-color{
+            background-color: rgb(240, 210, 76);
+            font-size: .7rem;
+            font-family: Geneva, Tahoma, sans-serif;
+        }
+
+     /* Aquí empieza el css de la sección de compras dentro de la página de los libros */
+
+        .reseñas-libros-precios{
+            background-color: rgb(224, 211, 202);
+
+            border-radius: 10px;
+            border: 2px solid rgb(180, 179, 179);
+
+            max-width: 100%;
+
+            margin: 5px 7px 8px 7px;
+            padding: 7px 10px 10px 10px;
+
+            text-align: center;
+        }
+        .reseñas-iconos{
+            display: flex;
+            flex-direction: row;
+
+            justify-content: space-around;
+        }
+
+        .reseñas-libros-boton{
+            max-height: auto;
+            max-width: 100px;
+
+            border-radius: 50px;
+            border: 2px solid black;
+
+            box-shadow: 5px 0px 10px rgba(0, 0, 0, .6);
+        }
+        
+        .reseñas-libros-contenido{
+            border-radius: 20px;
+            border: 2px solid rgb(228, 92, 29);
+
+            font-size: 1.3rem;
+
+            padding: 7px 10px 10px 10px;
+            margin: 5px 2px 8px 2px;
+
+            background-color: rgb(255, 224, 209);
+
+            height: 300px;
+            max-width: 100%;
+            overflow: auto;
+        }
+
+        .reseñas-libros article{
+            margin: 7px;
+            font-size: .8rem;
+            font-weight: 400;
+            text-align: justify;
+        }
+
+        .reseñas-libros article h2{
+            color: rgb(192, 78, 25);
+            font-weight: 800;
+            padding-bottom: 10px;
+        }
+
+        .reseñas-libros article ul li{
+            list-style: url(../imagenes/imagenes-iconos/libro-abierto-32px.png);
+            margin-bottom: 5px;
+
+        }
+
+    /* Acá empiezan los cambios de estilo para el desarrollo Mobile First */
+
+    @media (min-width:767px) and (max-width:1279px){
+
+        .libro-top-1 img{
+            max-width: 80%;
+            padding: 10px;
+        }
+
+        .reaccion-icon{
+            display: flex;
+            justify-content:center;
+            grid-template-rows: initial;
+            grid-area: "reaccion-icon";
+        }
+
+
+        .estilos-titulos{
+           display: flex;
+           justify-content: center;
+        }
+
+        .reseñas-libros-precios{
+            grid-area: "reseñas-libros-precios";
+        }
+    }
+
+    /* ==== */
+    /* Css del contenedor de bienvenida del index */
+    /* ==== */
+
+    .contenedor-bienvenida{
+        background-image: url(../imagenes/gift-cards/banner-navidad-bienvenida.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        height: 500px;
+        width: 80%;
+        margin-left: 10%;
+
+        border-radius: 40px;
+    }
+
+    .contenedor-bienvenida h3{
+        font-size: 2rem;
+        color: blanchedalmond;
+        text-align: center center;
+        width: 70%;
+        margin-left: 0;
+        text-align-last: center;
+        padding: 200px;
+    }
+
+/* Estos son los estilos de css destinados a cambiar el formato de los h1, h2, listas, div, ect. */
+
+    /*Y también aca probe jugar un poco con los h1 usando transformaciones*/
+
+    h1{
+        font-family: 'Katibeh', cursive;
+        color: rgb(31, 160, 121);
+        font-size: 3rem;
+
+        animation-duration: 3s;
+        animation-name: titulo;
+        animation-iteration-count: infinite;
+    }
+
+    /*==================*/
+    /*==================*/
+
+h2{
+    font-family: 'Katibeh', cursive;
+    font-size: 2rem;
+}
+
+.icono-diferente{
+    list-style-image: url(/imagenes/imagenes-iconos/baseline_menu_book_black_24dp.png);
+}
+
+/*=================================*/
+/*=================================*/
+/*Esto es para la parte de ul-ol-li*/
+/*=================================*/
+/*=================================*/
+
+.letra-grande{
+    font-size: 3 rem;
+}
+
+/*==============*/
+
+div ul li{
+    display: inline-block;
+    text-align: left;
+    margin-left: 0;
+    padding-right: 100px;
+}
+
+#tituloSecundario {
+    color: rgb(21, 114, 114);
+}
+
+.azulclaro{
+    color: rgb(19, 117, 141);
+}
+
+.links {
+    text-decoration: none;
+}
+
+/*=======================*/
+/*Acá practiqué lo de las transformaciones para los links de navegación*/
+/*======================*/
+
+    .el-desubicado{
+        border: solid 2px rgb(178, 214, 214);
+    
+        transition: all 2.5s ease-in-out;
+    }
+
+    .el-desubicado:hover{
+        background-color: rgb(157, 157, 158);
+    
+        transition: 0.5s;
+    }
+
+    .links-primary{
+        color: rgb(9, 12, 17);
+        font-weight: 900;
+        text-align: right;
+
+        background-color:rgb(72, 139, 170);
+        border: solid 2px rgb(178, 214, 214);
+    
+        transition: all 2.5s ease-in-out;
+    }
+
+    .links-primary:hover{
+        background-color: rgb(199, 231, 210);
+    
+        transition: 0.5s;
+    }
+
+/*==================*/
+/*==================*/
+
+/*Acá intenté hacer un efecto de sombra en el suelo de los logos usando animaciones cuando se le pasa el mouse, no se que me salió pero algo salió...*/
+
+    /* .links-secondary{
+     display: inline;
+    }
+
+    .links-secondary:hover{ 
+        animation-name: red-social;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        animation-duration: 2s;
+        animation-delay: 0.8s;
+    } */
+
+
+    /* fijate si lo podes usar en los nuevos */
+    /* @keyframes red-social {
+
+        0%{
+            background-color: rgb(222, 243, 243);
+        }
+
+        50%{
+            background-color: rgb(120, 141, 163);
+            border-radius: 100px;
+        }
+
+        100%{
+         background-color: gray;
+         border-radius: 60px;
+        }
+
+    } */
+/*=================*/
+/*=================*/
+
+/*==================*/
+/*A partir de aca empieza lo que ya me habías corregido Daniel*/
+/*==================*/
+
+
+
+
+
+
+/* EVALUO SACARLO */
+
+
+
+
+
+
+
+/* .links-redes-sociales{
+    height: 70px;
+    width: 90%;
+    text-align: right;
+    bottom: 10px;
+    right: 10px;
+} */
+
+    /* Estos son los estilos de css para trabajar lo de las posiciones y el concepto de padres e hijos*/
+
+    /* == */
+    /* == */
+    /* Estos son los estilos de css para trabajar lo aprendido en flex*/
+    /* == */
+    /* == */
+
+    
+
+    /* == */
+    /* == */
+    /* Estos son los estilos de css para trabajar lo aprendido en grid para la parte de redes sociales*/
+    /* == */
+    /* == */
+
+    /*Es lo que le da color a los navegadores de redes sociales*/
+
+
+    /* EVALUO SACARLO */
+    /* .grid-container-sociales{
+        background: rgb(199,199,199);
+        background: radial-gradient(circle, rgba(199,199,199,1) 0%, rgba(102,185,185,1) 85%);
+
+        display: grid;
+        grid-template-columns: 5fr 7fr;
+
+        height: 75px;
+
+        border-style: dashed;
+        border-width: 4; 
+        border-color: rgb(102, 185, 185);
+    }
+
+    @media (min-width:320px) and (max-width:768px){
+        .grid-container-sociales h4{
+            
+                 visibility: hidden;
+        }
+    } */
+
+    /* == */
+    /* == */
+    /* Estos son los estilos de css para trabajar lo aprendido en grid, pero no fui capaz de aplicar el grid temple areas porque no encontré el error*/
+    /* == */
+    /* == */
+
+    #lista-grid-1{
+    text-align: left;
+    height: 30%;
+    width: 40%;
+    font-size: 1.3rem;
+
+    grid-area: lista-grid-1;
+    }
+
+    #lista-grid-2{
+        text-align: left;
+        height: 30%;
+        width: 58%;
+        font-size: 1.3rem;
+
+        grid-area: lista-grid-2;
+    }
+
+    #lista-grid-3{
+        text-align: left;
+        width: 50%;
+        height: 40%;
+        font-size: 1.3rem;
+
+        grid-area: lista-grid-3;
+    }
+
+
+
+/* Estos son los estilos de css para el link que se supone tiene la propiedad sticky*/
+
+.el-desubicado{
+    text-align: right;
+    font-weight: 900;
+    text-decoration: none;
+    text-decoration: underline none;
+    color: black;
+    position: sticky;
+    top: 0;
+}
+
+    /* == */
+    /* == */
+    /* Estos son los estilos de css para trabajar lo aprendido en flex (saqué lo de align-text)*/
+    /* == */
+    /* == */
+
+
+    
+.registro-formulario{
+    width: 400px;
+    background-color: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+
+}
+.registro-formulario h4{
+    font-size: 22px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.controls{
+    width: 95%;
+    background-color: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+
+.registro-formulario span{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.registro-formulario a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.registro-formulario a :hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.registro-formulario .boton{
+    width: 100%;
+    background-color: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+
+
+
+
+    /* #contenedor-formulario{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        }
+    
+    #formulario{
+        width: 100px;
+    } */
+   
+    /*=======================*/
+    /*Este es el último logo que cree para agregar de fondo a la página*/
+    /*======================*/
+
+    .logo{
+        height: 80px;
+        width: 150px;
+    }
+
+        /* ==== */
+    /* Css de la ubicación de la librería en "Sobre Nosotros" */
+    /* ==== */
+
+    #ubicacion-mapa{
+        border-radius: 30px;
+        margin-left: 15%;
+        border: solid 3px rgb(116, 106, 106);
+        width: 70%;
+    }
+
+    /* ==== */
+    /* Este es el css de la Tabla de "Sobre Nosotros" */
+    /* ==== */
+
+    table{
+        size: 100px;
+        margin-left: 150px;
+        background-color: rgb(147, 157, 172);
+        border-radius: 20px;
+        border-style: solid;
+        border-color: rgb(47, 66, 100);
+
+        font-size: 1.15rem;
+    }
+    caption{
+        font-size: 1.5rem;
+
+        background-color: rgb(198, 198, 218);
+        border-radius: 20px;
+        border-style: solid;
+        border-color: rgb(47, 66, 100);
+    }
+    thead{
+        background-color: rgb(173, 173, 224);
+        border-radius: 20px;
+        border-style: solid;
+        border-color: rgb(47, 66, 100);
+    }
+    th{
+        border-radius: 20px;
+        border-style: solid;
+        border-color: rgb(47, 66, 100);
+    }
+    tbody{
+        background-color: rgb(177, 177, 177);
+        border-radius: 20px;
+    }
+    tr:hover td{
+        background-color: rgb(72, 133, 133);
+    }
+
+    /* Resposinve de la tabla de horarios */
+
+    @media (max-width:375px){
+        table {
+            align-items: center;
+            color: black;
+            font-weight: 900;
+            margin: auto;
+        }
+        tbody{
+            background-color: rgb(223, 219, 219);
+            border-radius: 20px; 
+        }
+    }
+
+    @media (min-width:376px){
+        table {
+            align-items: center;
+            color: black;
+            font-weight: 900;
+            margin: auto;
+        }
+    }
+
+    /* ==== */
+    /* Css de las Gift Cards */
+    /* ==== */
+
+    main .gift-cards{
+        display: grid;
+    }
+
+    .contenedor-gift-cards-banner{
+        background-image: url(../imagenes/gift-cards/gift-card-banner.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        height: 500px;
+    }
+
+    .contenedor-gift-cards-banner-hijo-1{
+        float: left;
+    }
+
+    .contenedor-gift-cards-banner-hijo-2{
+        color: rgb(245, 245, 231);
+        text-align: center;
+        font-size: 1.5rem;
+        padding-top: 10px;
+    }
+
+    .contenedor-gift-cards-banner h2{
+        font-size: 3rem;
+        color: whitesmoke;
+        margin: 50px;
+    }
+
+    .contenedor-gift-cards{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-auto-rows: minmax(50px, auto);
+        gap: 20px;
+        padding-left: 100px;
+        padding-right: 0;
+    }
+
+    .footer-gift-card{
+        text-align: center;
+    }
+    
+    .contenedor-gift-cards img{
+        width: 85%;
+        border: 3px solid rgb(95, 163, 172);
+        border-radius: 20px;
+    
+        align-items: center;
+        
+        margin: auto;
+    }
+
+    /* ==== */
+    /* Css del banner de "ahora 12" */
+    /* ==== */
+
+    .contenedor-formas-pago{
+        background-image: url(../imagenes/gift-cards/banner-formas-pago.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        height: 600px;
+        width: 100%;
+
+        border-radius: 40px;
+    }
+
+    .contenedor-formas-pago h3{
+        padding: 50px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.5rem;
+        color: blanchedalmond;
+    }
+    .contenedor-formas-pago h3 a{
+        text-decoration: none;
+        color:rgb(172, 127, 14);
+        width: 60%;
+    }
+
+    /* Banner del black friday */
+
+    .container-banner{
+        margin-top:  15px;
+        min-height: 300px;
+        background-color: rgb(179, 176, 176);
+    }
+    .container-banner-hijo {
+        min-height: 300px;
+        min-width: 100%;
+        
+        background-image: url(../imagenes/imagenes-banner/black-friday-banner.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        border:solid rgb(98, 94, 94);
+    }
+
+    /* Resposive de Container-banner */
+
+    @media (min-width:425px) and (max-width:720px){
+        .container-banner{
+            min-height: 250px;
+            background-color: rgb(179, 176, 176);
+        }
+
+        .container-banner-hijo {
+            min-height: 250px;
+            min-width: 100%;
+                
+            background-image: url(../imagenes/imagenes-banner/black-friday-banner.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    @media (max-width:425px){
+        .container-banner{
+            min-height: 150px;
+            background-color: rgb(179, 176, 176);
+        }
+
+        .container-banner-hijo {
+            min-height: 150px;
+            min-width: 100%;
+            
+            background-image: url(../imagenes/imagenes-banner/black-friday-banner.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+ 
+
+    
