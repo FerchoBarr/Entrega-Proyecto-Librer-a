@@ -17,12 +17,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Katibeh&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
     <!-- Main css-->
+    
     <link rel="stylesheet" href="../css/main.css">
+
+    <!-- estilos scss -->
+
+    <link rel="stylesheet" href="../scss/prueba.css">
 
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
             <div class="container-fluid">
               <a class="navbar-brand text-light fs-1" href="../index.html">Librería Escobar</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,7 +48,7 @@
                     <a class="nav-link dropdown-toggle text-light fs-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       gift-cards
                     </a>
-                    <ul class="dropdown-menu bg-danger" aria-labelledby="navbarDropdown">
+                    <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
                       <li><a class="dropdown-item text-light fs-4" href="gift-cards.html #10k">Gift-10k</a></li>
                       <li><a class="dropdown-item text-light fs-4" href="gift-cards.html #5k">Gift 5k</a></li>
                       <li><a class="dropdown-item text-light fs-4" href="gift-cards.html #4k">Gift 4k</a></li>
@@ -68,85 +73,61 @@
     <main>
 
         <h1 class="titulos-cabecera">Novedades</h1>
-        
-        <h2 class="azulclaro">Conoce los libros más vendidos en el mes de Septiembre-Octubre 2021</h2>
-        
-        <!-- == -->
-        <!-- Aquí puse en práctica lo visto el sábado pasado de listas ordenas y desordenadas -->
-        <!-- == -->
-        
-        <div id="grid-container">
-            
-            <ul>
-                <div id="lista-grid-1">
-                    
-                    <li class="letra-grande">Ficcón</li>
-                    
-                    <ol class="icono-diferente">
-                        <li>Los Vencejos - Fernando Aramburu</li>
-                        <li>De ninguna parte - Julia Navarro</li>
-                        <li>Volver a Dónde - Antonio Muñoz Molina</li>
-                        <li>A fuego lento - Paula Hawkins</li>
-                        <li>Boulevard - Flor Guadal Mojarraz Salvador</li>
-                        <li>Dónde estas, mundo bello - Sally Rooney</li>
-                        <li>Sira - Marí Dueñas</li>
-                        <li>Queridos niños - David Trueba</li>
-                        <li>Nada - Carmen Lanforet</li>
-                        <li>Reina roja - Juan Gómez-Jurado</li>
-                    </ol>
-                    
-                </div>
-                
-                <br>
-                
-                <div id="lista-grid-2">
-                    
-                    <li class="letra-grande">No Ficción</li>
-                    
-                    <ol class="icono-diferente">        
-                        <li>Encuentra tu persona vitamina - Marian Rojas Estapé</li>
-                        <li>El humor de mi vida - Paz padilla</li>
-                        <li>Pack ¿Puedo mirar tu pañal? con muñeco - Paul Auster</li>
-                        <li>El infinito en un junco - - Irene Vallejo</li>
-                        <li> Diccionario de Primaria - Vox Editorial</li>
-                        <li>La llama inmortal de Stephen Crane - Paul Auster</li>
-                        <li>Sin miedo - Rafael Santandreu</li>
-                        <li>Cuaderno Golden Blackie Books. Vol. 1 - VV. AA.</li>
-                        <li>Grimorio: 2021-2022 - Bebi Fernández</li>
-                        <li>Sapiens. De animales a dioses: Breve historia de la humanidad - Yuval Noah Harari</li>
-                    </ol>
-                    
-                </div>
-                
-                <br>
-                
-                <div id="lista-grid-3">
-                    
-                    
-                    <li class="letra-grande">Generales</li>
-                    
-                    <ol class="icono-diferente">
-                        <li>El ITALIANO - Arturo Pérez-Reverte</li>
-                        <li>CARNAVAL - Stephanie Garder</li>
-                        <li>Todo lo que nunca fuimos - Alice Kellen</li>
-                        <li>Asesino de BRUJAS - Shelby Mahurin</li>
-                        <li>AL FINAL MUEREN LOS DOS - ADAM SILVERA</li>
-                        <li>Los SIETE MARIDOS de EVELYN HUGO - TAYLOR JENKINS REID</li>
-                        <li>A través DE TI - Ariana Godoy</li>
-                        <li>LAS SEÑORITAS - Laura Ramos</li>
-                        <li>La tía Cósmica - FLORENCIA BONELLI</li>
-                        <li> PRIMERA PERSONA DEL SINGULAR - Haruki Murakami</li>
-                        <li>DE SANGRE Y CENIZAS - JENNIFER L. ARMENTROUT</li>
-                        <li>Nosotros en la luna - Alice Kellen</li>
-                        <li>Horóscopo chino 2022 - Squirrum Dari Ludovica</li>
-                        <li>A FUEGO LENTO - Paula Hawkins</li>
-                        <li>HEARTSTOPPER - Alice Oseman</li>
-                    </ol>
-                    
-                </div>
-            </ul>
 
-        </div>
+        <section class="tarjeta-animada-padre" id="animacion-de-tarjeta">
+
+          <div class="tarjeta-animada-hijo">
+            <div class="tarjeta">
+              <div class="adelante"><h2><img src="../imagenes/imagenes-libros-top/l1-el-club-de-los-psicopatas.jpg" alt=""></h2></div>
+              <div class="atras"><h2>¡Consigue el tuyo en nuestra <a href="pages-libros/libro-1.html">tienda</a>!</h2></div>
+            </div>
+          </div>
+
+          <div class="tarjeta-animada-hijo">
+            <div class="tarjeta">
+              <div class="adelante"><img src="../imagenes/imagenes-libros-top/l2-horoscopo-chino.jpg" alt=""></div>
+              <div class="atras"><h2>¡Consigue el tuyo en nuestra <a href="pages-libros/libro-2.html">tienda</a>!</h2></div>
+            </div>
+          </div>
+
+          <div class="tarjeta-animada-hijo">
+            <div class="tarjeta">
+              <div class="adelante"><img src="../imagenes/imagenes-libros-top/l3-notas-al-pie.jpg" alt=""></div>
+              <div class="atras"><h2>¡Consigue el tuyo en nuestra <a href="pages-libros/libro-3.html">tienda</a>!</h2></div>
+            </div>
+          </div>
+
+        </section>
+
+        <section class="contenedor-general">
+          <h2>Otras personas también buscaron</h2>
+        
+          <div class="contenedor-de-fotos-c">
+
+            <div class="foto-1 color-red"><a href="clientes.html"><img src="../imagenes/imagen-libros-animados/libro-1.jpg" alt=""></a></div>
+            <div class="foto-1 color-orange"><div><a href="clientes.html"><img src="../imagenes/imagen-libros-animados/libro-2.jpg" alt=""></a></div></div>
+            <div class="foto-1 color-yellow"><a href="clientes.html"><img src="../imagenes/imagen-libros-animados/libro-3.jpg" alt=""></a></div>
+            <div class="foto-1 color-green"><a href="clientes.html"><img src="../imagenes/imagen-libros-animados/libro-4.jpg" alt=""></a></div>
+            <div class="foto-1 color-blue"><a href="clientes.html"><img src="../imagenes/imagen-libros-animados/libro-5.jpg" alt=""></a></div>
+            <div class="foto-1 color-brown"><a href="clientes.html"><img src="../imagenes/imagen-libros-animados/libro-6.jpg" alt=""></a></div>
+            <div class="foto-1 color-grey"><a href="clientes.html"><img src="../imagenes/imagen-libros-animados/libro-7.jpg" alt=""></a></div>
+            <div class="foto-1 color-red"><a href="clientes.html"><img src="../imagenes/imagen-libros-animados/libro-8.jpg" alt=""></a></div>
+            <div class="foto-1 color-orange"><a href="clientes.html"><img src="../imagenes/imagen-libros-animados/libro-9.jpg" alt=""></a></div>
+            <div class="foto-1 color-yellow"><a href="clientes.html"><img src="../imagenes/imagen-libros-animados/libro-10.jpg" alt=""></a></div>
+            <div class="foto-1 color-green"><a href="clientes.html"><img src="../imagenes/imagen-libros-animados/libro-11.jpg" alt=""></a></div>
+            <div class="foto-1 color-blue"><a href="clientes.html"><img src="../imagenes/imagen-libros-animados/libro-12.jpg" alt=""></a></div>
+            <div class="foto-1 color-brown"><a href="clientes.html"><img src="../imagenes/imagen-libros-animados/libro-13.jpg" alt=""></a></div>
+            <div class="foto-1 color-grey"><a href="clientes.html"><img src="../imagenes/imagen-libros-animados/libro-14.jpg" alt=""></a></div>
+            <div class="foto-1 color-red"><a href="clientes.html"><img src="../imagenes/imagen-libros-animados/libro-15.jpg" alt=""></a></div>
+            <div class="foto-1 color-orange"><a href="clientes.html"><img src="../imagenes/imagen-libros-animados/libro-16.jpg" alt=""></a></div>
+            <div class="foto-1 color-yellow"><a href="clientes.html"><img src="../imagenes/imagen-libros-animados/libro-17.jpg" alt=""></a></div>
+            <div class="foto-1 color-green"><a href="clientes.html"><img src="../imagenes/imagen-libros-animados/libro-18.jpg" alt=""></a></div>
+            <div class="foto-1 color-blue"><a href="clientes.html"><img src="../imagenes/imagen-libros-animados/libro-19.jpg" alt=""></a></div>
+            <div class="foto-1 color-brown"><a href="clientes.html"><img src="../imagenes/imagen-libros-animados/libro-20.jpg" alt=""></a></div>
+
+          </div>
+
+      </section>
 
         <!-- == -->
         <!-- Aquí practiqué lo de utilizar id con CSS y crear enlaces absolutos -->
@@ -159,67 +140,67 @@
     </main>
      
      <!-- En esta parte se encuentran los links a las redes sociales ya utilizando la semantica correcta de footer-->
-     
+
      <footer class="main-navegacion">
 
-        <section class="footer-navegacion">
-            <article>
-                <h3>Librería Escobar</h3>
-  
-                <ul>
-                    <li><a href="sobrenosotros.html">Quiénes somos</a></li>
-  
-                    <li><a href="dudas-frecuentes.html">Preguntas frecuentes</a></li>
-  
-                    <li><a href="sobrenosotros.html#PP">Políticas de privacidad</a></li>
-                </ul>
-            </article>
-  
-            <article>
-                <h3>Clientes</h3>
-  
-                <ul>
-                    <li><a href="clientes.html">Clientes</a></li>
-  
-                    <li><a href="gift-cards.html">Gift Cards</a></li>
-                </ul>
-            </article>
-  
-            <hr>
-  
-            <article>
-                <h5><span>Todos los</span> Derechos reservados <span>para más información visita <a href="">Términos Y condiciones</a></span> &#169 Librería Escobar 2022</h5>
-            </article>
-        </section>
-  
-        <nav >
-            <ul class="contenedor-navbar-libro-2">
-                <h3><span>Si quieres saber más de nosotros, </span> visitanos en <span> nuestras redes sociales </span></h3>
-  
-                <li><a href="https://www.facebook.com/LibreriaUsadosEscobar" target="_blank"><img src="../imagenes/imagenes-redes-sociales/pngegg-facebook.png" alt=""></a></li>
-  
-                <li><a href="https://www.instagram.com/libreria.escobar/?utm_medium=copy_link" target="_blank"><img src="../imagenes/imagenes-redes-sociales/pngegg-instagram.png" alt=""></a></li>
-  
-                <li><a href="https://www.facebook.com/LibreriaUsadosEscobar" target="_blank"><img src="../imagenes/imagenes-redes-sociales/pngegg-twitter.png" alt=""></a></li>
-  
-                <li><a href="https://www.facebook.com/LibreriaUsadosEscobar" target="_blank"><img src="../imagenes/imagenes-redes-sociales/pngegg-whatssap.png" alt=""></a></li>
-  
-                <li><a href="../index.html"><img src="../imagenes/imagenes-redes-sociales/home.png" alt=""></a></li>
-            </ul>
-  
-            <ul class="contenedor-navbar-libro-1">
-                <li><a href="https://www.facebook.com/LibreriaUsadosEscobar" target="_blank"><img src="../imagenes/imagenes-redes-iconos/facebook.png" alt=""></a></li>
-  
-                <li><a href="https://www.instagram.com/libreria.escobar/?utm_medium=copy_link" target="_blank"><img src="../imagenes/imagenes-redes-iconos/instagram.png" alt=""></a></li>
-  
-                <li><a href="https://www.facebook.com/LibreriaUsadosEscobar" target="_blank"><img src="../imagenes/imagenes-redes-iconos/twitter.png" alt=""></a></li>
-  
-                <li><a href="https://www.facebook.com/LibreriaUsadosEscobar" target="_blank"><img src="../imagenes/imagenes-redes-iconos/whatsap.png" alt=""></a></li>
-  
-                <li><a href="../index.html"><img src="../imagenes/imagenes-redes-iconos/home.png" alt=""></a></li>
-            </ul>
-        </nav>
-      </footer>
+      <section class="footer-navegacion">
+          <article>
+              <h3>Librería Escobar</h3>
+
+              <ul>
+                  <li><a href="sobrenosotros.html">Quiénes somos</a></li>
+
+                  <li><a href="dudas-frecuentes.html">Preguntas frecuentes</a></li>
+
+                  <li><a href="sobrenosotros.html#PP">Políticas de privacidad</a></li>
+              </ul>
+          </article>
+
+          <article>
+              <h3>Clientes</h3>
+
+              <ul>
+                  <li><a href="clientes.html">Clientes</a></li>
+
+                  <li><a href="gift-cards.html">Gift Cards</a></li>
+              </ul>
+          </article>
+
+          <hr>
+
+          <article>
+              <h5><span>Todos los</span> Derechos reservados <span>para más información visita &nbsp<a href="">Términos Y condiciones</a></span> &#169 Librería Escobar 2022</h5>
+          </article>
+      </section>
+
+      <nav >
+          <ul class="contenedor-navbar-libro-2">
+              <h3><span>Si quieres saber más de nosotros, &nbsp</span>visitanos en &nbsp<span> nuestras redes sociales </span></h3>
+
+              <li><a href="https://www.facebook.com/LibreriaUsadosEscobar" target="_blank"><img src="../imagenes/imagenes-redes-sociales/pngegg-facebook.png" alt=""></a></li>
+
+              <li><a href="https://www.instagram.com/libreria.escobar/?utm_medium=copy_link" target="_blank"><img src="../imagenes/imagenes-redes-sociales/pngegg-instagram.png" alt=""></a></li>
+
+              <li><a href="https://twitter.com/?lang=es" target="_blank"><img src="../imagenes/imagenes-redes-sociales/pngegg-twitter.png" alt=""></a></li>
+
+              <li><a href="https://wa.me/541124564100" target="_blank"><img src="../imagenes/imagenes-redes-sociales/pngegg-whatssap.png" alt=""></a></li>
+
+              <li><a href="../index.html"><img src="../imagenes/imagenes-redes-sociales/home.png" alt=""></a></li>
+          </ul>
+
+          <ul class="contenedor-navbar-libro-1">
+              <li><a href="https://www.facebook.com/LibreriaUsadosEscobar" target="_blank"><img src="../imagenes/imagenes-redes-iconos/facebook.png" alt=""></a></li>
+
+              <li><a href="https://www.instagram.com/libreria.escobar/?utm_medium=copy_link" target="_blank"><img src="../imagenes/imagenes-redes-iconos/instagram.png" alt=""></a></li>
+
+              <li><a href="https://twitter.com/?lang=es" target="_blank"><img src="../imagenes/imagenes-redes-iconos/twitter.png" alt=""></a></li>
+
+              <li><a href="https://wa.me/541124564100" target="_blank"><img src="../imagenes/imagenes-redes-iconos/whatsap.png" alt=""></a></li>
+
+              <li><a href="../index.html"><img src="../imagenes/imagenes-redes-iconos/home.png" alt=""></a></li>
+          </ul>
+      </nav>
+    </footer>
 
      <!-- Parte de js sacada de Bootstrap -->
 

@@ -19,12 +19,15 @@
     <!-- Main css-->
     <link rel="stylesheet" href="../css/main.css">
 
+    <!-- Prueba scss-->
+    <link rel="stylesheet" href="../scss/prueba.css">
+
 </head>
 
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
             <div class="container-fluid">
               <a class="navbar-brand text-light fs-1" href="../index.html">Librería Escobar</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,7 +48,7 @@
                     <a class="nav-link dropdown-toggle text-light fs-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       gift-cards
                     </a>
-                    <ul class="dropdown-menu bg-danger" aria-labelledby="navbarDropdown">
+                    <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
                       <li><a class="dropdown-item text-light fs-4" href="gift-cards.html #10k">Gift-10k</a></li>
                       <li><a class="dropdown-item text-light fs-4" href="gift-cards.html #5k">Gift 5k</a></li>
                       <li><a class="dropdown-item text-light fs-4" href="gift-cards.html #4k">Gift 4k</a></li>
@@ -71,13 +74,15 @@
 
         <h1>Sobre Nosotros</h1>
 
-        <section>
+        <section class="nosotros">
             <p>
                 Librería Escobar nació en Buenos Aires, Argentina, en el año 2016. Somos un estableciemiento comercial especializados en la compra, venta, distribución y reparación de libros usados que busca ofrecer tanto a lectores y autores la mejor experiencia en el ámbito de la literatura.
             </p>
         </section>
+
+        <img id="ubicacion-mapa-c" src="../imagenes/ubicación-librería-foto-chica.jpg" alt="ubicación de la Librería">
       
-        <img id="ubicacion-mapa" src="../imagenes/ubicación-Librería.jpg" alt="">
+        <img id="ubicacion-mapa" src="../imagenes/ubicación-Librería.jpg" alt="ubicación de la Librería">
         
         <!-- == -->
         <!-- Acá empiezan los h2 con su atributo class del CSS -->
@@ -85,76 +90,77 @@
         
         <h2 class="azulclaro">Nuestra Misión</h2>
         
-        <p> Librería Escobar tiene la intención de potenciar la creatividad literaria y de fomentar el valor de la lectura en la sociedad. Nuestra misión es promover el acceso a contenidos educativos, culturales y recreativos. Y nuestra visión es promover la compra y venta de libros usados, convirtiéndonos en una de las principales tiendas de distribuidoras de libros de segunda mano todo el país.</p>
+        <section class="nosotros"> 
+            <p> Librería Escobar tiene la intención de potenciar la creatividad literaria y de fomentar el valor de la lectura en la sociedad. Nuestra misión es promover el acceso a contenidos educativos, culturales y recreativos. Y nuestra visión es promover la compra y venta de libros usados, convirtiéndonos en una de las principales tiendas de distribuidoras de libros de segunda mano todo el país.</p>
+        </section>
         
         <!-- == -->
         <!-- Tabla de contenido con los horarios de la librería -->
         <!-- == -->
         
         <h2 class="azulclaro">Horarios de atención</h2>
+
+        <section id="hs-atencion">
+           <p>Horario de atención: abieros lunes a sábados de 8:30-13:30 y 14:30-20:00</p>
+           <p>*Cerrado Domingos y Feriados</p>
+        </section>
         
-        <table>
-            <caption>Horarios</caption>
+        <section id="hs-tabla">
 
-            <thead>
-                <tr>
-                    <th></th>
-                    <th>Lunes</th>
-                    <th>Martes</th>
-                    <th>Miercoles</th>
-                    <th>Jueves</th>
-                    <th>Viernes</th>
-                    <th>Sábados</th>
-                </tr>
-            </thead>
-            
-            <tbody>
-                <tr>
-                    <td>8:30-13:30</td>
-                    <td>Abierto</td>
-                    <td>Abierto</td>
-                    <td>Abierto</td>
-                    <td>Abierto</td>
-                    <td>Abierto</td>
-                    <td>Abierto</td>
-                </tr>
-                
-                <tr>
-                    <td>13:30-14:30</td>
-                    <td>Horario de descanso</td>
-                    <td>Horario de descanso</td>
-                    <td>Horario de descanso</td>
-                    <td>Horario de descanso</td>
-                    <td>Horario de descanso</td>
-                    <td>Horario de descanso</td>
-                </tr>
-                
-                <tr>
-                    <td>14:00-20:00</td>
-                    <td>Abierto</td>
-                    <td>Abierto</td>
-                    <td>Abierto</td>
-                    <td>Abierto</td>
-                    <td>Abierto</td>
-                    <td>Abierto</td>
-                </tr>
-            </tbody>
+            <table id="tabla">
 
-            <!-- ============== -->
-            <!-- Aquí profesor tuve un problema, porque pese a que use un tfoot para hacer una aclaración debajo de la tabla, éste me aparece arriba de todo y sin cambios del css -->
-            <!-- ============== -->
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miercoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                        <th>Sábados</th>
+                    </tr>
+                </thead>
             
-            <tfoot>
-                <tr>*Cerrado Domingos y Feriados</tr>
-            </tfoot>
+                <tbody>
+                    <tr>
+                        <td>8:30-13:30</td>
+                        <td>Abierto</td>
+                        <td>Abierto</td>
+                        <td>Abierto</td>
+                        <td>Abierto</td>
+                        <td>Abierto</td>
+                        <td>Abierto</td>
+                    </tr>
+                
+                    <tr>
+                        <td>13:30-14:30</td>
+                        <td>Horario de descanso</td>
+                        <td>Horario de descanso</td>
+                        <td>Horario de descanso</td>
+                        <td>Horario de descanso</td>
+                        <td>Horario de descanso</td>
+                        <td>Horario de descanso</td>
+                    </tr>
+                
+                    <tr>
+                        <td>14:00-20:00</td>
+                        <td>Abierto</td>
+                        <td>Abierto</td>
+                        <td>Abierto</td>
+                        <td>Abierto</td>
+                        <td>Abierto</td>
+                        <td>Abierto</td>
+                    </tr>
+                </tbody>
             
-        </table>
+            </table>
+        </section> 
         
         <!-- == -->
         <!-- Sigo con los h2 y la descripción de la página, esta vez aplicando section y -->
         <!-- == -->
         
-        <section>
+        <section class="nosotros">
             
             <h2 class="azulclaro" id="PP">Políticas de privacidad</h2>
 
@@ -215,21 +221,21 @@
             <hr>
   
             <article>
-                <h5><span>Todos los</span> Derechos reservados <span>para más información visita <a href="">Términos Y condiciones</a></span> &#169 Librería Escobar 2022</h5>
+                <h5><span>Todos los</span> Derechos reservados <span>para más información visita &nbsp<a href="">Términos Y condiciones</a></span> &#169 Librería Escobar 2022</h5>
             </article>
         </section>
   
         <nav >
             <ul class="contenedor-navbar-libro-2">
-                <h3><span>Si quieres saber más de nosotros, </span> visitanos en <span> nuestras redes sociales </span></h3>
+                <h3><span>Si quieres saber más de nosotros, &nbsp</span>visitanos en &nbsp<span> nuestras redes sociales </span></h3>
   
                 <li><a href="https://www.facebook.com/LibreriaUsadosEscobar" target="_blank"><img src="../imagenes/imagenes-redes-sociales/pngegg-facebook.png" alt=""></a></li>
   
                 <li><a href="https://www.instagram.com/libreria.escobar/?utm_medium=copy_link" target="_blank"><img src="../imagenes/imagenes-redes-sociales/pngegg-instagram.png" alt=""></a></li>
   
-                <li><a href="https://www.facebook.com/LibreriaUsadosEscobar" target="_blank"><img src="../imagenes/imagenes-redes-sociales/pngegg-twitter.png" alt=""></a></li>
+                <li><a href="https://twitter.com/?lang=es" target="_blank"><img src="../imagenes/imagenes-redes-sociales/pngegg-twitter.png" alt=""></a></li>
   
-                <li><a href="https://www.facebook.com/LibreriaUsadosEscobar" target="_blank"><img src="../imagenes/imagenes-redes-sociales/pngegg-whatssap.png" alt=""></a></li>
+                <li><a href="https://wa.me/541124564100" target="_blank"><img src="../imagenes/imagenes-redes-sociales/pngegg-whatssap.png" alt=""></a></li>
   
                 <li><a href="../index.html"><img src="../imagenes/imagenes-redes-sociales/home.png" alt=""></a></li>
             </ul>
@@ -239,9 +245,9 @@
   
                 <li><a href="https://www.instagram.com/libreria.escobar/?utm_medium=copy_link" target="_blank"><img src="../imagenes/imagenes-redes-iconos/instagram.png" alt=""></a></li>
   
-                <li><a href="https://www.facebook.com/LibreriaUsadosEscobar" target="_blank"><img src="../imagenes/imagenes-redes-iconos/twitter.png" alt=""></a></li>
+                <li><a href="https://twitter.com/?lang=es" target="_blank"><img src="../imagenes/imagenes-redes-iconos/twitter.png" alt=""></a></li>
   
-                <li><a href="https://www.facebook.com/LibreriaUsadosEscobar" target="_blank"><img src="../imagenes/imagenes-redes-iconos/whatsap.png" alt=""></a></li>
+                <li><a href="https://wa.me/541124564100" target="_blank"><img src="../imagenes/imagenes-redes-iconos/whatsap.png" alt=""></a></li>
   
                 <li><a href="../index.html"><img src="../imagenes/imagenes-redes-iconos/home.png" alt=""></a></li>
             </ul>

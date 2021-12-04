@@ -1,0 +1,519 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.nosotros {
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+
+#ubicacion-mapa-c {
+  border-radius: 30px;
+  margin-left: 5%;
+  border: solid 3px #746a6a;
+  width: 90%;
+}
+
+#ubicacion-mapa {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #ubicacion-mapa-c {
+    display: none;
+  }
+  #ubicacion-mapa {
+    margin-left: 10%;
+    border-radius: 30px;
+    border: solid 3px #746a6a;
+    width: 80%;
+    display: inline;
+  }
+}
+
+#hs-tabla {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #hs-atencion {
+    display: none;
+  }
+  #hs-tabla {
+    display: inline;
+  }
+  #hs-tabla #tabla {
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+    font-weight: 700;
+  }
+  #hs-tabla #tabla thead {
+    background-color: #7c7878;
+    border: 3px solid black;
+  }
+  #hs-tabla #tabla thead th {
+    font-weight: 500;
+  }
+  #hs-tabla #tabla tbody {
+    background-color: #beb0b0;
+    border: 3px solid black;
+  }
+}
+
+.color-red {
+  background-color: red;
+}
+
+.color-orange {
+  background-color: orange;
+}
+
+.color-yellow {
+  background-color: yellow;
+}
+
+.color-green {
+  background-color: green;
+}
+
+.color-blue {
+  background-color: blue;
+}
+
+.color-brown {
+  background-color: brown;
+}
+
+.color-grey {
+  background-color: grey;
+}
+
+.contenedor-general h2 {
+  display: none;
+}
+
+.contenedor-de-fotos-c {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.contenedor-de-fotos-c .foto-1 {
+  margin: auto;
+  margin-top: 10px;
+  width: 150px;
+  height: 200px;
+  border: 5px 0px 10px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.6);
+          box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.6);
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.contenedor-de-fotos-c .foto-1 img {
+  padding: 0;
+  margin: 0;
+  width: 150px;
+  height: 200px;
+}
+
+.contenedor-de-fotos-c .foto-1:hover {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contenedor-general h2 {
+    display: inline;
+  }
+  .contenedor-de-fotos-c {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .contenedor-de-fotos-c .foto-1 {
+    margin: auto;
+    margin-top: 10px;
+    width: 150px;
+    height: 200px;
+    border: 5px 0px 10px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.6);
+            box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.6);
+    -webkit-transition: 2s;
+    transition: 2s;
+  }
+  .contenedor-de-fotos-c .foto-1 img {
+    padding: 0;
+    margin: 0;
+    width: 150px;
+    height: 200px;
+  }
+  .contenedor-de-fotos-c .foto-1:hover {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@media (min-width: 1024px) {
+  .contenedor-general h2 {
+    display: none;
+  }
+  .contenedor-de-fotos-c {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .contenedor-de-fotos-c .foto-1 {
+    margin: auto;
+    margin-top: 10px;
+    width: 150px;
+    height: 200px;
+    border: 5px 0px 10px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.6);
+            box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.6);
+    -webkit-transition: 2s;
+    transition: 2s;
+  }
+  .contenedor-de-fotos-c .foto-1 img {
+    padding: 0;
+    margin: 0;
+    width: 150px;
+    height: 200px;
+  }
+  .contenedor-de-fotos-c .foto-1:hover {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+.tarjeta-animada-padre {
+  width: 90%;
+  margin: 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tarjeta-animada-padre .tarjeta-animada-hijo {
+  margin: 10px;
+  -webkit-perspective: 800;
+  perspective: 800;
+  -webkit-box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.6);
+          box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.tarjeta-animada-padre .tarjeta-animada-hijo .tarjeta {
+  background-color: darkcyan;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: 1.3s ease;
+  transition: 1.3s ease;
+  border-radius: 10px;
+  border: 2px solid gray;
+}
+
+.tarjeta-animada-padre .tarjeta-animada-hijo .tarjeta img {
+  width: 300px;
+  height: 400px;
+  border-radius: 14px;
+  border: 2px solid gray;
+}
+
+.tarjeta-animada-padre .tarjeta-animada-hijo .tarjeta .adelante, .tarjeta-animada-padre .tarjeta-animada-hijo .tarjeta .atras {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.tarjeta-animada-padre .tarjeta-animada-hijo .tarjeta .adelante h2, .tarjeta-animada-padre .tarjeta-animada-hijo .tarjeta .atras h2 {
+  font-size: 3rem;
+}
+
+.tarjeta-animada-padre .tarjeta-animada-hijo .tarjeta .adelante h2 a, .tarjeta-animada-padre .tarjeta-animada-hijo .tarjeta .atras h2 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.tarjeta-animada-padre .tarjeta-animada-hijo .tarjeta .atras {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tarjeta-animada-hijo:hover .tarjeta {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+@media (max-width: 1024px) {
+  #animacion-de-tarjeta {
+    display: none;
+  }
+}
+
+.formulario-chico {
+  background-color: #24303c;
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  margin-bottom: 10%;
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 7px 13px 37px rgba(0, 0, 0, 0.603);
+          box-shadow: 7px 13px 37px rgba(0, 0, 0, 0.603);
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.formulario-chico h4 {
+  font-size: 1.5rem;
+  padding: 10px;
+  text-align: center;
+}
+
+.formulario-chico #registrarme {
+  display: block;
+  margin: auto;
+  width: 75%;
+  background-color: #424255;
+  color: white;
+  margin-top: 5px;
+  padding: 12px;
+  border-radius: 7px;
+}
+
+.formulario-chico span {
+  font-size: 12px;
+  line-height: 35px;
+}
+
+.formulario-chico a {
+  text-decoration: none;
+  color: white;
+}
+
+.formulario-chico p {
+  font-size: 1.3rem;
+  text-align: center;
+  padding-top: 10px;
+  line-height: 45px;
+}
+
+.formulario-chico .controles-chicos {
+  width: 90%;
+  background-color: #24303c;
+  padding: 10px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #1f53c5;
+  color: white;
+}
+
+@media (min-width: 321px) and (max-width: 779px) {
+  .formulario-chico {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #24303c;
+    color: white;
+    width: 300px;
+    height: 450px;
+    margin: auto;
+    margin-bottom: 10%;
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 7px 13px 37px rgba(0, 0, 0, 0.603);
+            box-shadow: 7px 13px 37px rgba(0, 0, 0, 0.603);
+  }
+  .formulario-chico #registrarme {
+    display: block;
+    margin: auto;
+    width: 70%;
+    background-color: #424255;
+    color: white;
+    border-radius: 5px;
+  }
+}
+
+@media (min-width: 769px) {
+  .formulario-chico {
+    background: #4B79A1;
+    /* fallback for old browsers */
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-gradient(linear, left top, right top, from(#283E51), to(#4B79A1));
+    background: linear-gradient(to right, #283E51, #4B79A1);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 400px;
+    height: 470px;
+    margin: auto;
+    margin-bottom: 10%;
+    padding: 20px;
+    border-radius: 5px;
+    -webkit-box-shadow: 7px 13px 37px rgba(0, 0, 0, 0.603);
+            box-shadow: 7px 13px 37px rgba(0, 0, 0, 0.603);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+  .formulario-chico .controles-chicos {
+    width: 90%;
+    background-color: white;
+    padding: 10px;
+    color: black;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 2px solid #887d7d;
+  }
+  .formulario-chico span {
+    font-size: 15px;
+    line-height: 40px;
+  }
+}
+
+.contenedor-all h2 {
+  font-size: 1.3rem;
+  background-color: #415f77;
+  color: #fff;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.contenedor-all .black-friday-c img {
+  width: 100%;
+  height: 100%;
+}
+
+.contenedor-all .black-friday-g {
+  display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contenedor-all h2 {
+    font-size: 1.4rem;
+    text-align: center;
+    background-color: #4d5a64;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contenedor-all h2 {
+    font-size: 2.2rem;
+    text-align: left;
+    background-color: #364552;
+  }
+  .contenedor-all .black-friday-c {
+    display: none;
+  }
+  .contenedor-all .black-friday-g {
+    display: inline;
+    margin-bottom: 10px;
+  }
+  .contenedor-all .black-friday-g img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.giftcard-container h2 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+.giftcard-container .gift-padre .gift-hijo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+}
+
+.giftcard-container .gift-padre .gift-hijo img {
+  border: 3px solid #685c21;
+  border-radius: 20px;
+  width: 300px;
+  height: 200px;
+}
+
+@media (min-width: 620px) and (max-width: 1024px) {
+  .giftcard-container h2 {
+    font-size: 1.8rem;
+  }
+  .giftcard-container .gift-padre {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .giftcard-container .gift-padre .gift-hijo {
+    margin: auto;
+    padding: 10px;
+  }
+  .giftcard-container .gift-padre .gift-hijo img {
+    border: 3px solid #685c21;
+    border-radius: 20px;
+    width: 300px;
+    height: 200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .giftcard-container h2 {
+    font-size: 2.3rem;
+    text-align: center;
+  }
+  .giftcard-container .gift-padre {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .giftcard-container .gift-padre .gift-hijo {
+    margin: auto;
+    padding: 20px;
+  }
+  .giftcard-container .gift-padre .gift-hijo img {
+    border: 3px solid #685c21;
+    border-radius: 20px;
+    width: 300px;
+    height: 200px;
+  }
+}
+/*# sourceMappingURL=prueba.css.map */

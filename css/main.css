@@ -13,139 +13,7 @@ body{
 
     overflow-x: hidden;
     }
-    /* esto practicaste a la mitad ayer. */
-
-
-
-
-    /* esto es lo que usaste para armar el navegador()lo cambiaste por el de sass */
-
-    /* .nav-input:checked + .ultimo-intento{
-        background: tomato;
-    }
-        .menu{background-color: #e9183b;
-        height: 75px;
-        width: 100vw;
-        align-items: center;
-        border-bottom: 1px solid #fff;
-        box-shadow: 5px 0px 10px rgba(0, 0, 0, .6);
-
-        display: flex;
-        justify-content: space-between;
-        }
-
-        .logo-libreria{
-            color: white;
-            font-size: 35px;
-            padding: 0 80px;
-            font-weight: bold;
-        }
-
-        .menu-items{
-            display: flex;
-            list-style: none;
-            margin-right: 30px;
-        }
-
-        .menu-items li{
-            border-radius: 3px;
-            margin: 0 5px;
-        }
-
-        .menu-items li a{
-            padding: 7px 13px;
-            text-decoration: none;
-            font-size: 18 px;
-            display: block;
-            text-transform: uppercase;
-            color: white;
-        }
-
-        .menu-items li:hover, li.active{
-            background-color: rgba(0, 0, 0, .3);
-            transition: .4s;
-        }
-
-        .btn-menu{
-            margin-right: 30px;
-            font-size: 25px;
-            color: #fff;
-            cursor: pointer;
-            display:none;
-            justify-content: center;
-            justify-content: space-between;
-            align-items: center;
-        } 
-
-           ul.mostrar{
-            top: 65px;
-        }
-        
-        @media (max-width:952px){
-            .logo-libreria{
-                font-size: 30px;
-                padding-left: 35px;
-            }
-
-            .menu-items{
-                font-size: 16px;
-            }
-        }
-
-        @media (max-width:858px){
-            .menu{
-                height: 65px;
-            }
-
-            .btn-menu{
-                display: inline-flex;
-            }
-
-            .menu-items{
-                position: fixed;
-                width: 100px;
-                height: calc(100% - 65px);
-                background: #414141;
-                top: 100vh;
-                text-align: center;
-                transition: all .4s;
-                flex-direction: column;
-            }
-
-            .menu-items li{
-                margin: 30px 0px 0px 0px;
-                line-height: 30px;
-            }
-
-            .menu-items li:hover{
-                background: none;
-            }
-
-            .menu-items li a{
-                font-size:20px;
-                color: #fff;
-                font-weight: bold;
-            }
-
-            .menu-items li a:hover{
-                color: #e9183b;
-            }
-            .logo{
-                font-size: 25px;
-                padding-left: 35px;
-            }
-        }
-
-        @media screen and (max-width:858px) and (orientation:landscape) {
-            .menu-items li{
-                margin: 5pc 0 0 0;
-            }
-            .menu-items{
-                overflow: scroll;
-                height: calc(100% - 65px);
-            }
-            
-        } */
+    
 
         .main-navegacion{
             position: relative;
@@ -440,10 +308,6 @@ h2{
     font-size: 2rem;
 }
 
-.icono-diferente{
-    list-style-image: url(/imagenes/imagenes-iconos/baseline_menu_book_black_24dp.png);
-}
-
 /*=================================*/
 /*=================================*/
 /*Esto es para la parte de ul-ol-li*/
@@ -508,146 +372,6 @@ div ul li{
         transition: 0.5s;
     }
 
-/*==================*/
-/*==================*/
-
-/*Acá intenté hacer un efecto de sombra en el suelo de los logos usando animaciones cuando se le pasa el mouse, no se que me salió pero algo salió...*/
-
-    /* .links-secondary{
-     display: inline;
-    }
-
-    .links-secondary:hover{ 
-        animation-name: red-social;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease;
-        animation-duration: 2s;
-        animation-delay: 0.8s;
-    } */
-
-
-    /* fijate si lo podes usar en los nuevos */
-    /* @keyframes red-social {
-
-        0%{
-            background-color: rgb(222, 243, 243);
-        }
-
-        50%{
-            background-color: rgb(120, 141, 163);
-            border-radius: 100px;
-        }
-
-        100%{
-         background-color: gray;
-         border-radius: 60px;
-        }
-
-    } */
-/*=================*/
-/*=================*/
-
-/*==================*/
-/*A partir de aca empieza lo que ya me habías corregido Daniel*/
-/*==================*/
-
-
-
-
-
-
-/* EVALUO SACARLO */
-
-
-
-
-
-
-
-/* .links-redes-sociales{
-    height: 70px;
-    width: 90%;
-    text-align: right;
-    bottom: 10px;
-    right: 10px;
-} */
-
-    /* Estos son los estilos de css para trabajar lo de las posiciones y el concepto de padres e hijos*/
-
-    /* == */
-    /* == */
-    /* Estos son los estilos de css para trabajar lo aprendido en flex*/
-    /* == */
-    /* == */
-
-    
-
-    /* == */
-    /* == */
-    /* Estos son los estilos de css para trabajar lo aprendido en grid para la parte de redes sociales*/
-    /* == */
-    /* == */
-
-    /*Es lo que le da color a los navegadores de redes sociales*/
-
-
-    /* EVALUO SACARLO */
-    /* .grid-container-sociales{
-        background: rgb(199,199,199);
-        background: radial-gradient(circle, rgba(199,199,199,1) 0%, rgba(102,185,185,1) 85%);
-
-        display: grid;
-        grid-template-columns: 5fr 7fr;
-
-        height: 75px;
-
-        border-style: dashed;
-        border-width: 4; 
-        border-color: rgb(102, 185, 185);
-    }
-
-    @media (min-width:320px) and (max-width:768px){
-        .grid-container-sociales h4{
-            
-                 visibility: hidden;
-        }
-    } */
-
-    /* == */
-    /* == */
-    /* Estos son los estilos de css para trabajar lo aprendido en grid, pero no fui capaz de aplicar el grid temple areas porque no encontré el error*/
-    /* == */
-    /* == */
-
-    #lista-grid-1{
-    text-align: left;
-    height: 30%;
-    width: 40%;
-    font-size: 1.3rem;
-
-    grid-area: lista-grid-1;
-    }
-
-    #lista-grid-2{
-        text-align: left;
-        height: 30%;
-        width: 58%;
-        font-size: 1.3rem;
-
-        grid-area: lista-grid-2;
-    }
-
-    #lista-grid-3{
-        text-align: left;
-        width: 50%;
-        height: 40%;
-        font-size: 1.3rem;
-
-        grid-area: lista-grid-3;
-    }
-
-
-
 /* Estos son los estilos de css para el link que se supone tiene la propiedad sticky*/
 
 .el-desubicado{
@@ -660,231 +384,11 @@ div ul li{
     top: 0;
 }
 
-    /* == */
-    /* == */
-    /* Estos son los estilos de css para trabajar lo aprendido en flex (saqué lo de align-text)*/
-    /* == */
-    /* == */
-
-
-    
-.registro-formulario{
-    width: 400px;
-    background-color: #24303c;
-    padding: 30px;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    border-radius: 4px;
-    font-family: 'calibri';
-    color: white;
-    box-shadow: 7px 13px 37px #000;
-
-}
-.registro-formulario h4{
-    font-size: 22px;
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-.controls{
-    width: 95%;
-    background-color: #24303c;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid #1f53c5;
-    font-family: 'calibri';
-    font-size: 18px;
-    color: white;
-}
-
-.registro-formulario span{
-    height: 40px;
-    text-align: center;
-    font-size: 18px;
-    line-height: 40px;
-}
-
-.registro-formulario a{
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.registro-formulario a :hover{
-    color: white;
-    text-decoration: underline;
-}
-
-.registro-formulario .boton{
-    width: 100%;
-    background-color: #1f53c5;
-    border: none;
-    padding: 12px;
-    color: white;
-    margin: 16 0;
-    font-size: 16px;
-    text-align: center;
-}
 
 
 
 
 
-
-    /* #contenedor-formulario{
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: baseline;
-        }
-    
-    #formulario{
-        width: 100px;
-    } */
-   
-    /*=======================*/
-    /*Este es el último logo que cree para agregar de fondo a la página*/
-    /*======================*/
-
-    .logo{
-        height: 80px;
-        width: 150px;
-    }
-
-        /* ==== */
-    /* Css de la ubicación de la librería en "Sobre Nosotros" */
-    /* ==== */
-
-    #ubicacion-mapa{
-        border-radius: 30px;
-        margin-left: 15%;
-        border: solid 3px rgb(116, 106, 106);
-        width: 70%;
-    }
-
-    /* ==== */
-    /* Este es el css de la Tabla de "Sobre Nosotros" */
-    /* ==== */
-
-    table{
-        size: 100px;
-        margin-left: 150px;
-        background-color: rgb(147, 157, 172);
-        border-radius: 20px;
-        border-style: solid;
-        border-color: rgb(47, 66, 100);
-
-        font-size: 1.15rem;
-    }
-    caption{
-        font-size: 1.5rem;
-
-        background-color: rgb(198, 198, 218);
-        border-radius: 20px;
-        border-style: solid;
-        border-color: rgb(47, 66, 100);
-    }
-    thead{
-        background-color: rgb(173, 173, 224);
-        border-radius: 20px;
-        border-style: solid;
-        border-color: rgb(47, 66, 100);
-    }
-    th{
-        border-radius: 20px;
-        border-style: solid;
-        border-color: rgb(47, 66, 100);
-    }
-    tbody{
-        background-color: rgb(177, 177, 177);
-        border-radius: 20px;
-    }
-    tr:hover td{
-        background-color: rgb(72, 133, 133);
-    }
-
-    /* Resposinve de la tabla de horarios */
-
-    @media (max-width:375px){
-        table {
-            align-items: center;
-            color: black;
-            font-weight: 900;
-            margin: auto;
-        }
-        tbody{
-            background-color: rgb(223, 219, 219);
-            border-radius: 20px; 
-        }
-    }
-
-    @media (min-width:376px){
-        table {
-            align-items: center;
-            color: black;
-            font-weight: 900;
-            margin: auto;
-        }
-    }
-
-    /* ==== */
-    /* Css de las Gift Cards */
-    /* ==== */
-
-    main .gift-cards{
-        display: grid;
-    }
-
-    .contenedor-gift-cards-banner{
-        background-image: url(../imagenes/gift-cards/gift-card-banner.jpg);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        height: 500px;
-    }
-
-    .contenedor-gift-cards-banner-hijo-1{
-        float: left;
-    }
-
-    .contenedor-gift-cards-banner-hijo-2{
-        color: rgb(245, 245, 231);
-        text-align: center;
-        font-size: 1.5rem;
-        padding-top: 10px;
-    }
-
-    .contenedor-gift-cards-banner h2{
-        font-size: 3rem;
-        color: whitesmoke;
-        margin: 50px;
-    }
-
-    .contenedor-gift-cards{
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-auto-rows: minmax(50px, auto);
-        gap: 20px;
-        padding-left: 100px;
-        padding-right: 0;
-    }
-
-    .footer-gift-card{
-        text-align: center;
-    }
-    
-    .contenedor-gift-cards img{
-        width: 85%;
-        border: 3px solid rgb(95, 163, 172);
-        border-radius: 20px;
-    
-        align-items: center;
-        
-        margin: auto;
-    }
 
     /* ==== */
     /* Css del banner de "ahora 12" */
@@ -916,13 +420,14 @@ div ul li{
 
     /* Banner del black friday */
 
-    .container-banner{
+    /* .container-banner{
         margin-top:  15px;
-        min-height: 300px;
+        margin-bottom: 10px;
+        max-height: 100%;
         background-color: rgb(179, 176, 176);
     }
     .container-banner-hijo {
-        min-height: 300px;
+        min-height: 100%;
         min-width: 100%;
         
         background-image: url(../imagenes/imagenes-banner/black-friday-banner.jpg);
@@ -931,11 +436,11 @@ div ul li{
         background-size: cover;
 
         border:solid rgb(98, 94, 94);
-    }
+    }  */
 
     /* Resposive de Container-banner */
 
-    @media (min-width:425px) and (max-width:720px){
+     /* @media (min-width:425px) and (max-width:720px){
         .container-banner{
             min-height: 250px;
             background-color: rgb(179, 176, 176);
@@ -967,7 +472,7 @@ div ul li{
             background-repeat: no-repeat;
             background-size: cover;
         }
-    }
+    } */
 
  
 
