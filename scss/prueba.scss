@@ -12,6 +12,38 @@ body{
 
 // Cambios en el index.
 
+h1{
+    font-family: 'Katibeh', cursive;
+    color: rgb(31, 160, 121);
+    font-size: 3rem;
+
+    animation-duration: 3s;
+    animation-name: titulo;
+    animation-iteration-count: infinite;
+}
+
+div{
+
+    ul{
+
+        li{
+            display: inline-block;
+            text-align: left;
+            margin-left: 0;
+            padding-right: 100px;
+        }
+    } 
+}
+
+#tituloSecundario {
+    color: rgb(21, 114, 114);
+}
+
+h2{
+    font-family: 'Katibeh', cursive;
+    font-size: 2rem;
+}
+
 // Este es el cambio de estilos para le contenedor de top 10 de libros y el banner de información de contacto.
 
 .contenedor-vidriera{
