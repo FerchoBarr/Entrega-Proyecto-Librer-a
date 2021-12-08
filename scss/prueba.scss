@@ -1,9 +1,383 @@
 @import "variables/variables";
 
 body{
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 1em;
+    background-color: rgb(240, 238, 238);
+    
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+}
+
+// Cambios en el index.
+
+// Este es el cambio de estilos para le contenedor de top 10 de libros y el banner de información de contacto.
+
+.contenedor-vidriera{
+    margin-top: 3%;
+    margin-bottom: 2%;
+
+    h3{
+        padding-bottom: 10px;
+    }
+
+    #banner-contacto{
+        padding-top: 15px;
+        padding-left: auto;
+        
+
+        img{
+            max-width: 100%;
+            height: 100%;
+
+            border: gray 3px solid;
+            border-radius: 20px;
+        }
+    }
+}
+
+@media(min-width:375px) and (max-width: 768px){
+    .contenedor-vidriera{
+        
+        #banner-contacto{
+            display: flex;
+            justify-content: center;
+
+            img{
+                min-width: 90%;
+            }
+        }
+    }
+}
+
+@media (min-width:768px){
+
+    .contenedor-vidriera{
+        display: flex;
+        max-width: 100%;
+        padding-left: 5px;
+
+        #banner-contacto{
+            padding-left: 3%;
+            padding-right: 3%;
+            min-width: 50%;
+        }
+        #top-10{
+            min-width: 50%;
+            padding-left: 5%;
+        }
+    }
+}
+
+// Aquí empieza el banner de las editoriales con las que se maneja la librería.
+
+.banner-editoriales{
+
+   img{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        max-height: 100%;
+        border: gray solid 3px;
+        border-radius: 5px;
+   }
+}
+
+@media (min-width:768px){
+    .banner-editoriales{
+        display: inline;
+    }
+}
+
+// Esta es la parte del footer (de todas las páginas).
+
+.main-navegacion{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-decoration: none;
+    background-color: rgb(202, 198, 198);
+    padding-top: 2px;
+
+    .footer-navegacion{
+
+        h3{
+            color: #0f1f2f;
+            padding-left: 10px;
+        }
+
+        li{
+            list-style: none;
+
+            a{
+                text-decoration: none;
+                color: #000;
+            }
+        }
+
+        h5{
+            text-align: center;
+
+            span{
+                display: none;
+            }
+        }
+    }
+
+    .contenedor-navbar-libro-1, .contenedor-navbar-libro-2{
+        padding-top: 1%;
+        padding-bottom: 1%;
+        border: 2px solid white;
+        border-radius: 5px;
+        box-shadow: 5px 0px 10px rgba(0, 0, 0, .6);
+        margin: 1px;
+
+        text-decoration: none;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+        padding-right: 40px;
+    }
+
+    .contenedor-navbar-libro-2{
+        display: none;
+    }
+}
+
+//Comienzo de la parte Responsive en el footer.
+
+@media (min-width:800px){
+    .main-navegacion{
+        .contenedor-navbar-libro-1{
+            display: none;
+        }
+        .contenedor-navbar-libro-2{
+            display: inline-flex;
+            width: 100%;
+            height: 100%;
+            padding-top: 0;
+            padding-bottom: 0;
+
+            h3{
+                display: inline-flex;
+                font-size: 1.3rem;
+
+                span{
+                    display: none;
+                }
+            }
+            
+        }
+
+        .footer-navegacion{
+            h5{
+
+                span{
+                    display: inline-flex;
+
+                    a{
+                        text-decoration: none;
+                        color: #000;
+                    }
+                   
+
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:1024px){
+    .main-navegacion{
+
+        .contenedor-navbar-libro-2{
+            padding-bottom: 0;
+
+            h3{
+                span{
+                    display: inline-flex;
+                }
+            }
+        }
+    }
+}
+
+// Esta parte corresponde al desarrollo de los estilos de los libros top.
+.main-top-libros{
+    
+    .libro-top-1{
+        display: flex;
+        justify-content: center;
+
+        img{
+            max-width: 60%;
+
+            border: rgb(168, 165, 165) solid 3px;
+            border-radius: 5px;
+            box-shadow: $borde-libros;
+        }
+    }
+
+    .reaccion-icon{
+        display: flex;
+        justify-content: center;
+    }
+
+    .estilos-titulos{
+        padding-left: 10px;
+
+        .estilos-titulos-2{
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .estilos-titulos-s3{
+            opacity: 50%;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: rgba(0, 0, 0, .6);
+        }
+
+        .estilos-titulos-3{
+            color: #e9183b;
+        }
+
+        .estilos-titulos-ed-3{
+            color: rgb(0, 0, 0);
+            font-weight: 400;
+        }
+
+        .fondo-color{
+            background-color: rgb(240, 210, 76);
+            font-size: .7rem;
+            font-family: Geneva, Tahoma, sans-serif;
+        }
+    }
+
+    // Aquí empieza el css de la sección de compras dentro de la página de los libros.
+
+    .reseñas-libros-precios{
+        background-color: rgb(224, 211, 202);
+
+        border-radius: 10px;
+        border: 2px solid rgb(180, 179, 179);
+
+        max-width: 100%;
+
+        margin: 5px 7px 8px 7px;
+        padding: 7px 10px 10px 10px;
+
+        text-align: center;
+
+        .reseñas-iconos{
+            display: flex;
+            flex-direction: row;
+
+            justify-content: space-around;
+        }
+
+        .reseñas-libros-boton{
+            max-height: auto;
+            max-width: 100px;
+
+            border-radius: 50px;
+            border: 2px solid black;
+
+            box-shadow: 5px 0px 10px rgba(0, 0, 0, .6);
+        }
+    }
+
+    .reseñas-libros-contenido{
+        border-radius: 20px;
+        border: 2px solid rgb(228, 92, 29);
+
+        font-size: 1.3rem;
+
+        padding: 7px 10px 10px 10px;
+        margin: 5px 2px 8px 2px;
+
+        background-color: rgb(255, 224, 209);
+
+        max-height: 300px;
+        max-width: 100%;
+        overflow: auto;
+    }
+
+    .reseñas-libros article{
+        margin: 7px;
+        font-size: .8rem;
+        font-weight: 400;
+        text-align: justify;
+    }
+
+    .reseñas-libros article h2{
+        color: rgb(192, 78, 25);
+        font-weight: 800;
+        padding-bottom: 10px;
+    }
+
+    .reseñas-libros article ul li{
+        list-style: url(../imagenes/imagenes-iconos/libro-abierto-32px.png);
+        margin-bottom: 5px;
+
+    }
+}
+
+/* Acá empiezan los cambios de estilo para el desarrollo Mobile First */
+
+@media (min-width:767px) and (max-width:1279px){
+
+    .libro-top-1{
+        
+        img{
+
+            max-width: 80%;
+            padding: 10px;
+        }
+    }
+
+    .reaccion-icon{
+        display: flex;
+        justify-content:center;
+        grid-template-rows: initial;
+        grid-area: "reaccion-icon";
+    }
+
+
+    .estilos-titulos{
+       display: flex;
+       justify-content: center;
+    }
+
+    .reseñas-libros-precios{
+        grid-area: "reseñas-libros-precios";
+    }
+
+    .reseñas-libros{
+
+        .reseñas-libros-contenido{
+            p{
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+@media (min-width:1279px){
+
+    .reseñas-libros{
+
+        .reseñas-libros-contenido{
+            p{
+                font-size: 1.15rem;
+            }
+        }
+    }
+
 }
 
 // Cambios en el texto de la página "Sobre Nosotros".
@@ -507,7 +881,22 @@ body{
     }
 }
 
-@media(min-width:768px) and (max-width:1024px){
+@media(min-width:425px) and (max-width:768px){
+
+    .contenedor-all{
+        .black-friday-c{
+            margin-left: 15%;
+
+            img{
+                width: 80%;
+                height: 80%;
+            }
+            
+        }
+    }
+}
+
+@media(min-width:769px) and (max-width:1024px){
     .contenedor-all{
 
         h2{
@@ -566,6 +955,22 @@ body{
 }
 
 .giftcard-container{
+
+    #giftcard-bienvenida{
+        display: flex;
+        justify-content: center;
+
+        padding: 20px;
+
+        img{
+            max-width: 100%;
+            height: 100%;
+
+            border: rgb(87, 80, 41) solid 5px;
+            border-radius: 25px;
+        }
+    }
+
     h2{
         font-size: 1.3rem;
         font-weight: 400;
@@ -597,9 +1002,7 @@ body{
 
         .gift-padre{
             display: grid;
-
             grid-template-columns: 1fr 1fr;
-        
 
             .gift-hijo{
                 margin: auto;
@@ -611,7 +1014,6 @@ body{
             }
         }
     }
-
 }
 
 @media(min-width:1024px){
@@ -624,10 +1026,8 @@ body{
 
         .gift-padre{
             display: grid;
-
             grid-template-columns: 1fr 1fr 1fr;
         
-
             .gift-hijo{
                 margin: auto;
                 padding: 20px;
@@ -638,9 +1038,5 @@ body{
             }
         }
     }
-
 }
-
-
-
 
