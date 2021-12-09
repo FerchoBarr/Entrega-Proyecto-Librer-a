@@ -390,20 +390,28 @@ h2 {
   text-align: center;
 }
 
-#ubicacion-mapa-c {
+#mapa-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#mapa-container #ubicacion-mapa-c {
   margin: 15px 10px 15px 10px;
   border-radius: 30px;
   border: solid 3px #746a6a;
   width: 90%;
 }
 
-#ubicacion-mapa {
+#mapa-container #ubicacion-mapa {
   display: none;
 }
 
 @media (min-width: 500px) and (max-width: 599px) {
-  #ubicacion-mapa-c {
-    margin-left: 55px;
+  #mapa-container #ubicacion-mapa-c {
     width: 80%;
   }
   .nosotros {
@@ -413,18 +421,16 @@ h2 {
 
 @media (min-width: 600px) and (max-width: 767px) {
   #ubicacion-mapa-c {
-    margin-left: 100px;
     margin-bottom: 5%;
     width: 70%;
   }
 }
 
 @media (min-width: 768px) {
-  #ubicacion-mapa-c {
+  #mapa-container #ubicacion-mapa-c {
     display: none;
   }
-  #ubicacion-mapa {
-    margin-left: 10%;
+  #mapa-container #ubicacion-mapa {
     margin-bottom: 4%;
     border-radius: 30px;
     border: solid 3px #746a6a;
@@ -500,7 +506,7 @@ h2 {
   background-color: grey;
 }
 
-.contenedor-general h2 {
+.contenedor-general h3 {
   display: none;
 }
 
@@ -570,8 +576,9 @@ h2 {
 }
 
 @media (min-width: 1024px) {
-  .contenedor-general h2 {
-    font-size: 2.3rem;
+  .contenedor-general h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.1rem;
     display: inline;
   }
   .contenedor-de-fotos-c {
@@ -712,8 +719,8 @@ h2 {
   color: white;
 }
 
-.formulario-chico h4 {
-  font-size: 1.5rem;
+.formulario-chico h2 {
+  font-size: 1.4rem;
   padding: 10px;
   text-align: center;
 }
@@ -799,6 +806,9 @@ h2 {
             box-shadow: 7px 13px 37px rgba(0, 0, 0, 0.603);
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+  }
+  .formulario-chico h2 {
+    font-size: 2.3rem;
   }
   .formulario-chico .controles-chicos {
     width: 90%;
