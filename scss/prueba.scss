@@ -14,7 +14,7 @@ body{
 
 h1{
     font-family: 'Katibeh', cursive;
-    color: rgb(31, 160, 121);
+    color: rgb(15, 126, 92);
     font-size: 3rem;
 
     animation-duration: 3s;
@@ -501,10 +501,12 @@ h2{
 
     .titulo-cabecera{
         font-size: 3.8rem;
+        padding-top: 30px;
     }
 
     .azulclaro{
         font-size: 2.6rem;
+        padding-top: 20px;
     }
 
     .nosotros{
@@ -1063,25 +1065,129 @@ h2{
 
 @media(min-width:1024px){
 
-    .giftcard-container{
-        h2{
-            font-size: 2.3rem;
-            text-align: center;
+    .contenedor-all{
+
+        section{
+            h2{
+                text-align: center;
+            }
         }
 
-        .gift-padre{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-        
-            .gift-hijo{
-                margin: auto;
-                padding: 20px;
+        .giftcard-container{
+            h2{
+                font-size: 2.3rem;
+                text-align: center;
+            }
     
-                img{
-                    @include imgagen-gift;
+            .gift-padre{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            
+                .gift-hijo{
+                    margin: auto;
+                    padding: 20px;
+        
+                    img{
+                        @include imgagen-gift;
+                    }
                 }
             }
         }
     }
 }
+
+// Estilos para la página de Términos y condiciones.
+
+.terminos{
+    padding: 20px;
+
+    h2{
+        text-align: center;
+        font-size: 1.7rem;
+        font-weight: 600;
+        color: #15624b;
+
+        padding-bottom: 10px;
+    }
+
+    section{
+
+        text-align: justify;
+
+        h3{
+            font-size: 1.4;
+            padding-bottom: 15px;
+            text-align: center;
+            color: rgb(14, 65, 49);
+        }
+
+
+        article{
+
+            h4{
+                padding-top: 20px;
+                text-align: center;
+                font-size: 1.3;
+                font-weight: 600;
+                color:$azulclaro;
+            }
+
+            a{
+                text-decoration: none;
+                font-weight: 900;
+                color: black;
+            }
+
+            p{
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+// Acá empiezan las Media Queries de la página Términos y condiciones.
+
+@media (min-width:700px)and (max-width:1024px){
+    .terminos{
+        padding-left: 40px;
+        padding-right: 40px;
+
+        section{
+
+            p{
+                font-weight: 500;
+            }
+
+            article{
+
+                p{
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1025px){
+
+    .terminos{
+        padding-left: 80px;
+        padding-right: 80px;
+
+        section{
+
+            p{
+                font-weight: 500;
+            }
+
+            article{
+
+                p{
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
 
